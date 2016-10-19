@@ -21,7 +21,7 @@ Create Jar::
 
 Terminal
 
-cd timestamp-body-interceptor
+cd project root directory FlumeInterceptor-master
 mvn clean
 mvn install
 
@@ -33,3 +33,5 @@ Restart the Flume Agent:
 
 Run command after navigating to the $APACHE_FLUME_HOME_DIRECTORY
 bin/flume-ng agent --conf conf --conf-file conf/streaming.conf --name a1 -Dflume.root.logger=INFO,console
+
+Now the Messages will be sent to all random partitions
